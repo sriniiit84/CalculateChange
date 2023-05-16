@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\CaculateRequestProcess.cs" />
-    <Compile Include="Domain\CalculateChangeRequest.cs" />
-    <Compile Include="Domain\CalculateChangeResult.cs" />
+    <Compile Include="Process\CaculateRequestProcess.cs" />
+    <Compile Include="Model\CalculateChangeRequest.cs" />
+    <Compile Include="Model\CalculateChangeResult.cs" />
     <Compile Include="Model\CalculateChangeConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

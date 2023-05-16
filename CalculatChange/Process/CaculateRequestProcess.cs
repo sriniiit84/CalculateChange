@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace CalculateChange.ProcessChange
 {
+    /// <summary>
+    /// Process to get the request and calculate change
+    /// </summary>
     public class CaculateRequestProcess
     {
 
@@ -12,7 +15,7 @@ namespace CalculateChange.ProcessChange
         /// Process the change by geting the request object
         /// </summary>
         /// <param name="request">Gets the change request as an object</param>
-        /// <returns></returns>
+        /// <returns>CalculateChangeResult object</returns>
         public CalculateChangeResult ProcessChange(CalculateChangeRequest request)
         {
             var result = CalculateChangeRequest(request.GivenAmount, request.ProductPrice);
@@ -25,11 +28,11 @@ namespace CalculateChange.ProcessChange
 
 
         /// <summary>
-        /// 
+        /// Business logic to calculate the change
         /// </summary>
         /// <param name="currencyAmount"></param>
         /// <param name="productPrice"></param>
-        /// <returns></returns>
+        /// <returns>Dictonary collection</returns>
         /// <exception cref="ArgumentException"></exception>
         public Dictionary<string, int> CalculateChangeRequest(decimal currencyAmount, decimal productPrice)
         {
@@ -55,7 +58,7 @@ namespace CalculateChange.ProcessChange
         }
 
         /// <summary>
-        /// 
+        /// Append the pound or pence symbol 
         /// </summary>
         /// <param name="denomination"></param>
         /// <returns></returns>

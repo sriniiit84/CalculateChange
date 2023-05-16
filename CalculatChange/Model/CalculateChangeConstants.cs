@@ -1,8 +1,11 @@
 ﻿namespace CalculatChange.Model
 {
+    /// <summary>
+    /// Contains the constant values
+    /// </summary>
     public static class CalculateChangeConstants
     {
-        public readonly static string PoundSymbol = "£";
-        public readonly static string PenceSymbol = "p";
+        public const string PoundSymbol = "£";
+        public const string PenceSymbol = "p";
     }
 }
