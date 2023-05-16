@@ -68,7 +68,6 @@ namespace CalculateChange.ProcessChange
                 return CalculateChangeConstants.PoundSymbol + denomination;
             else
                 return denomination * 100 + CalculateChangeConstants.PenceSymbol;
-        
         }
 
     }
