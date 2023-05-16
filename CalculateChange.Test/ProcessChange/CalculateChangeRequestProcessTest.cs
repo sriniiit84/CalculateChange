@@ -86,6 +86,5 @@ namespace CalculateChange.ProcessChange
             // Act and Assert
             Assert.Throws<ArgumentException>(() => _processObj.ProcessChange(request));
         }
-
     }
 }

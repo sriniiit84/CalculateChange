@@ -34,7 +34,7 @@ namespace CalculateChange.ProcessChange
         /// <param name="productPrice"></param>
         /// <returns>Dictonary collection</returns>
         /// <exception cref="ArgumentException"></exception>
-        public Dictionary<string, int> CalculateChangeRequest(decimal currencyAmount, decimal productPrice)
+        private Dictionary<string, int> CalculateChangeRequest(decimal currencyAmount, decimal productPrice)
         {
             decimal change = currencyAmount - productPrice;
 
@@ -68,6 +68,7 @@ namespace CalculateChange.ProcessChange
                 return CalculateChangeConstants.PoundSymbol + denomination;
             else
                 return denomination * 100 + CalculateChangeConstants.PenceSymbol;
+        
         }
 
     }
